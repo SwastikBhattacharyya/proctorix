@@ -1,0 +1,16 @@
+{
+  "name": "proctorix",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "libs/*"
+  ],
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.4",
+    "@types/bun": "1.3.8",
+    "nx": "^22.5.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "name": "@proctorix/api-contracts",
+  "projectType": "library",
+  "targets": {
+    "migration:generate": {
+      "options": {
+        "cwd": "{projectRoot}"
+      },
+      "command": "bun typeorm migration:generate ./src/database/migrations/{args.name}"
+    },
+    "migration:show": {
+      "options": {
+        "cwd": "{projectRoot}"
+      },
+      "command": "bun typeorm migration:show"
+    },
+    "migration:run": {
+      "options": {
+        "cwd": "{projectRoot}"
+      },
+      "command": "bun typeorm migration:run"
+    }
+  }
+}
